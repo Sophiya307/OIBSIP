@@ -1,0 +1,213 @@
+*{
+    margin:0%;
+    padding: 0%;
+    box-sizing:border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+.container {
+    background-color: black;
+    color:white;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.7em;
+    position: sticky;
+    top: 0%;
+}
+.container ul {
+    display: flex;
+}
+.container ul li {
+    list-style: none;
+}
+.container ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.2rem;
+}
+.container ul li a:hover{
+    background: #efdfbb;
+}
+.logo{
+    font-family:cursive;
+    font-size: 3rem;
+    padding-left: 0.2rem;
+    margin-left: 0.1rem;
+}
+.sophiya{
+    color: #efdfbb;
+    font-family: cursive;
+    margin-left: 0.1rem;
+}
+.header{
+  background: url(cafe1.jpg);
+  background-repeat: no-repeat;
+  height: 93vh;
+  background-position: center;
+  background-size: cover;
+}
+.header div{
+    color: white;
+    background:rgba(0,0,0,0.2);
+    height:100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family:sans-serif;
+}
+.head-text{
+    font-size: 4em;
+    margin: 0.7rem;
+}
+.p-text{
+    font-size:1.2rem ;
+    margin-bottom: 1rem;
+}
+#btn{
+    background-color:#efdfbb ;
+    color: black;
+    padding: 0.7rem;
+    border: none;
+    width: 7rem;
+    font-family:'Josefin Sans', sans-serif ;
+}
+#btn:hover{
+    background-color: red;
+}
+#services{
+    display:flex;
+    align-items: center;
+}
+.contain{
+    margin: 0.7rem;
+    width: 105rem;
+}
+.services-h3{
+    font-family: cursive;
+    text-align: center;
+}
+.cards-p{
+    font-size: 1rem;
+    margin: 10px auto;
+    font-family: 'Cantarell', sans-serif;
+}
+.cards{
+    text-align: center;
+    padding: 1.4rem;
+}
+.cards i{
+    background-color:#efdfbb ;
+    padding: 2rem;
+    border-radius:5rem ;
+}
+#about{
+    background:url(cafe2.jpg);
+    height: 89vh;
+    width: 205vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.about-h1{
+    font-family: cursive;
+    text-align: left;
+    padding: 0.7rem 1.1rem;
+    color: #efdfbb;
+    font-size: 2.4rem;
+    
+}
+.about-p{
+    font-family: Arial, Helvetica, sans-serif;
+    color:#efdfbb ;
+    padding:0.7rem 1.1rem;
+    font-size: 1.1rem;
+}
+#about div{
+    background-color: rgba(0,0,0,0.4);
+    height: 100%;
+}
+.about-btn{
+    background-color:#efdfbb ;
+    color: black;
+    border: none;
+    padding:0.6rem;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 6rem;
+    margin: 1rem 1rem;;  
+}
+#img{
+    background: url(cafe3.png);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 51rem;
+    width: 50rem;
+}
+.form{
+    text-align: right; 
+    margin-left: 70rem;
+    margin-top: 5rem;
+}
+input{
+  height: 4.5rem;
+  width: 45rem;
+  border: 10px solid #efdfbb;
+}
+.f-1{
+    text-align: right;
+    color: #efdfbb;
+    font-family: cursive;
+    font-size: 3.2rem;
+    margin-left: 20rem;
+    margin-top: 0.6rem;
+}
+.form-btn{
+    background-color: #efdfbb;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    width: 5.7rem;
+    height: 2.7rem;
+    border: none;
+    margin-top: 1rem;
+    font-size:1.3rem ;
+}
+label{
+    font-size: 1.3rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+footer{
+    background:#efdfbb ;
+    text-align: center;
+    font-family: cursive;
+    font-size: 1.1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
