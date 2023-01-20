@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/0fc3847f8d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav class="nav">
+                <h1 class="container-h1">PORTFOLIO</h1>
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#Resume">Resume</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text"><br>
+                <p>Frontend Developer</p>
+                <h1>Hi, I'm <br><span>Sophiya Saleema<br> Qureshi</span>  </h1>
+            </div>
+        </div>
+    </div>
+    <!-----about--- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                   
+                   <i class="fa fa-user" aria-hidden="true"></i>
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard 
+                     dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                     It has survived not only five centuries,  but also the leap into electronic typesetting, remaining essentially unchanged. It was
+                     popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing 
+                     software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+                     <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links"  onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-links"  onclick="opentab('Education')">Education</p>
+                     </div>
+                     <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI & UX</span><br>Designing web/app interfaces</li>
+                            <li><span>Web Development</span><br>Website Development</li>
+                            <li><span>Logo Designing</span><br>Designing various logo </li>
+                        </ul>
+                     </div>
+                     <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span>Fresher</span><br>I am currently a fresher</li>
+                            <li><span>Web Design</span><br>I have designed various websites</li>
+                            <li><span>Programming</span><br>done programming in various languages</li>
+                        </ul>
+                     </div>
+                     <div class="tab-contents" id="Education">
+                        <ul>
+                        <ul>
+                            <li><span>Bachelor of Technology</span><br>8.17 CGPA</li>
+                            <li><span>Stanford International School</span><br>80% (12th Boards)</li>
+                            <li><span>Stanford International School</span><br>87% (10th Boards)</li>
+                        </ul>
+                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Resume -->
+    <div id="Resume">
+        <div class="container">
+            <h1 class="sub-title">Resume</h1>
+               <div class="resume-btn">
+                 <button>Preview</button>
+                 <button>Download</button>
+               </div>
+        </div>
+    </div>
+    <!-- Portfolio -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="image2.jpg" >
+                    <div class="layer">
+                        <h3>Social media app</h3>
+                        <p>the app contains talented people around the world</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="image3.jpg" >
+                    <div class="layer">
+                        <h3>Music  app</h3>
+                        <p>the app contains talented people around the world</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="image2.jpg" >
+                    <div class="layer">
+                        <h3>E-commerce application</h3>
+                        <p>the app contains talented people around the world</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- contact -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i> sophiya2001qureshi@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i> ******3268</p>
+                    <div class="social-icons">
+                       <a href="#"><i class="fab fa-linkedin"></i></a>
+                       <a href="#"><i class="fab fa-whatsapp"></i></a>
+                       <a href="#"><i class="fab fa-twitter-square"></i></a>
+                    </div> 
+                </div>
+                <div class="contact-right">
+                    <form >
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6"placeholder="Your Message"></textarea>
+                        <button class="btn" type="submit">Submit</button>
+                    </form>
+                    
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName('tab-links');
+        var tabcontents = document.getElementsByClassName('tab-contents');
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link")
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link")
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+</body>
+</html>
